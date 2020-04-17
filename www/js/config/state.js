@@ -7,12 +7,12 @@ angular.module(messages.APP_NAME)
         templateUrl: 'templates/login.html',
         controller: 'login'
       })
-      // .state('home', {
-      //   cache: false,
-      //   url: '/home/:username',
-      //   templateUrl: 'templates/homePage.html',
-      //   controller: 'homeController'
-      // })
+      .state('createRoom', {
+        cache: false,
+        url: '/createRoom',
+        templateUrl: 'templates/createRoom.html',
+        controller: 'createRoom'
+      })
       // .state('form', {
       //   cache: false,
       //   url: '/form',
