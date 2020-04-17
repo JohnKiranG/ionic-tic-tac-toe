@@ -13,12 +13,12 @@ angular.module(messages.APP_NAME)
         templateUrl: 'templates/createRoom.html',
         controller: 'createRoom'
       })
-      // .state('form', {
-      //   cache: false,
-      //   url: '/form',
-      //   templateUrl: 'templates/formPage.html',
-      //   controller: 'formController'
-      // })
+      .state('game', {
+        cache: false,
+        url: '/game',
+        templateUrl: 'templates/tic-tac-toe.html',
+        controller: 'gameController'
+      })
 
     $urlRouterProvider.otherwise('/login');
   })
