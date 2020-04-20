@@ -1,4 +1,4 @@
-angular.module(messages.APP_NAME)
+myApp
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('login', {
@@ -12,6 +12,12 @@ angular.module(messages.APP_NAME)
         url: '/createRoom',
         templateUrl: 'templates/createRoom.html',
         controller: 'createRoom'
+      })
+      .state('joinRoom', {
+        cache: false,
+        url: '/joinRoom',
+        templateUrl: 'templates/joinRoom.html',
+        controller: 'joinRoom'
       })
       .state('game', {
         cache: false,

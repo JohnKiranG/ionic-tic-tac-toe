@@ -1,5 +1,5 @@
 <ion-pane>
-    <ion-content ng-controller = "createRoom">
+    <ion-content>
         <div>
             <div class="h1 title">Create Room</div>
         </div>
@@ -15,6 +15,9 @@
             <br>
             <div align="center">
               <button class="button button-positive activated" ng-click = "generateRoomId()">Go</button>
+            </div>
+            <div ng-show="showRoomNo">
+               Your room no is:  {{roomNo}}
             </div>
         </div>
     </ion-content>
